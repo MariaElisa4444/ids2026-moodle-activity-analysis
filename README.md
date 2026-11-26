@@ -10,14 +10,14 @@
 **Data.** The data (Moodle event logs, grades and course information of 8 course years) is private and is not included in this repository. It was provided by Reimo Palm, University of Tartu.
 
 **Files.**
-- `01a_activity_analysis_cleaned.ipynb`: detailed analysis of student and teacher Moodle activity from 2019 to 2026, including yearly trends, activity types and weekly patterns
-- `01b_activity_deeper_analysis_cleaned.ipynb`: further analysis of changes in 2023–2026, the COVID-19 transition, and activity around homework deadlines and exams
+- `01a_activity_analysis.ipynb`: detailed analysis of student and teacher Moodle activity from 2019 to 2026, including yearly trends, activity types and weekly patterns
+- `01b_activity_deeper_analysis.ipynb`: further analysis of changes in 2023–2026, the COVID-19 transition, and activity around homework deadlines and exams
 - `02_shared_dataset.ipynb`: builds the shared student-level dataset (activity features of the first 8 weeks and the final grade) and the train/test split (train: 2019 and 2021-2024, test: 2025 and 2026)
 - `02_ridge_regression.ipynb`, `03_decision_tree.ipynb`, `04_random_forest.ipynb`: three prediction models, compared with a baseline that predicts the average grade
 - `05_rf_experiments.ipynb`: additional experiments with other predictors, activity periods and settings
 - result tables and graphs (`*_results.csv`, `*.png`)
 
-**How to repeat the analysis.** Install Python with pandas, pyarrow, scikit-learn and matplotlib. Put `tcs_dataset/` next to the notebooks and run them in this order: `01a_activity_analysis_cleaned`, `01b_activity_deeper_analysis_cleaned`, `02_shared_dataset` (it creates `shared_train.csv` and `shared_test.csv`), then `02_ridge_regression`, `03_decision_tree`, `04_random_forest` and `05_rf_experiments`.
+**How to repeat the analysis.** Install Python with pandas, pyarrow, scikit-learn and matplotlib. Put `tcs_dataset/` next to the notebooks and run them in this order: `01a_activity_analysis`, `01b_activity_deeper_analysis`, `02_shared_dataset` (it creates `shared_train.csv` and `shared_test.csv`), then `02_ridge_regression`, `03_decision_tree`, `04_random_forest` and `05_rf_experiments`.
 
 **Main results so far.** 
 
